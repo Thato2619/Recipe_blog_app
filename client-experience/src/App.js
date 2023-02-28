@@ -4,6 +4,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Register from './websitePages/Register';
+import Login from './websitePages/Login';
+import Write from './websitePages/Write';
+import Single from './websitePages/Single';
+import Home from './websitePages/Home';
 
 const router = createBrowserRouter([
   //this path lead to homepage
