@@ -18,3 +18,11 @@
     
 }
 
+.topLeft, .topRight{
+    flex: 3;
+    background-color: tomato;
+}
+
+.center{
+    flex:6
+}
