@@ -9,6 +9,8 @@ import Login from './websitePages/Login';
 import Write from './websitePages/Write';
 import Single from './websitePages/Single';
 import Home from './websitePages/Home';
+import Navbar from './componets /Navbar';
+import Footer from './componets /Footer';
 
 const router = createBrowserRouter([
   //this path lead to homepage
