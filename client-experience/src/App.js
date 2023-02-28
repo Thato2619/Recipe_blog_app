@@ -1,10 +1,10 @@
 
 import './App.css';
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";
+//import {
+  //createBrowserRouter,
+  //Outlet,
+  //RouterProvider,
+//} from "react-router-dom";
 import Register from './websitePages/register/Register';
 import Login from './websitePages/login/Login';
 import Write from './websitePages/write/Write';
@@ -14,7 +14,7 @@ import Navbar from './componets /navbar/Navbar';
 import Footer from './componets /footer/Footer';
 
 
-const Layout = () => {
+/*const Layout = () => {
   return(
     //Outlet is a function that is  used in parent route elements to render their child route elements
     <>
@@ -61,15 +61,14 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register />, //this component represents the content in Register.jsx file
   },
-]);
+
+  <RouterProvider  router={router}/>
+]);*/
 
 function App() {
   return (
     <div className="App">
-      <div className='container'>
-        <RouterProvider  router={router}/>
-      </div>
-      
+      <Navbar />
     </div>
   );
 }
