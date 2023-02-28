@@ -20,9 +20,24 @@
 
 .topLeft, .topRight{
     flex: 3;
-    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.navIcon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #439775;
+    cursor: pointer;
+
+}
+.navImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .center{
     flex:6
 }

@@ -7,10 +7,10 @@ export default function Navbar() {
   return (
     <div className='nav'>
       <div className="topLeft">
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <i className="navIcon" class="fa-brands fa-pinterest"></i>
+        <i className="navIcon"class="fa-brands fa-facebook"></i>
+        <i className="navIcon" class="fa-brands fa-instagram"></i>
+        <i className="navIcon" class="fa-brands fa-twitter"></i>
 
       </div>
       <div className="topCenter">
@@ -24,8 +24,9 @@ export default function Navbar() {
       </div>
       <div className="topRight">
          <img
-          src=""
-          alt=""
+         className="navImg"
+          src="../../../images/profilePhoto.jpeg"
+          alt="display image"
          />
 
          <i className="navSearchBar"class="fa-solid fa-magnifying-glass"></i>
