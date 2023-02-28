@@ -69,38 +69,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
-      <p>efjkewbf</p>
+      
     </div>
   );
 }
