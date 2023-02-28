@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Write = () => {
+const Single = () => {
   return (
     <div>
-      
+      single
     </div>
   )
 }
 
-export default Write
+export default Single

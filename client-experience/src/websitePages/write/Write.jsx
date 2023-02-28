@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Register = () => {
+const Write = () => {
   return (
     <div>
-      
+      write
     </div>
   )
 }
 
-export default Register
+export default Write

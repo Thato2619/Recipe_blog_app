@@ -5,11 +5,11 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import Register from './websitePages/Register';
-import Login from './websitePages/Login';
-import Write from './websitePages/Write';
-import Single from './websitePages/Single';
-import Home from './websitePages/Home';
+import Register from './websitePages/register/Register';
+import Login from './websitePages/login/Login';
+import Write from './websitePages/write/Write';
+import Single from './websitePages/single/Single';
+import Home from './websitePages/home/Home';
 import Navbar from './componets /Navbar';
 import Footer from './componets /Footer';
 
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/single",
+        path: "/post/:id",
         element: <Single />,  //this component represents the content in Single.jsx file
       },
 
@@ -66,7 +66,10 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <RouterProvider  router={router}/>
+      <div className='container'>
+        <RouterProvider  router={router}/>
+      </div>
+      
     </div>
   );
 }
