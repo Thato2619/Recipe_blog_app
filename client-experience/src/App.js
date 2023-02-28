@@ -22,13 +22,13 @@ const router = createBrowserRouter([
   //this path leads to login page
   {
     path: "/login",
-    element: <div>Hellooooooo!</div>,
+    element: <Login />,
   },
 
   //this path leads to registration page
   {
     path: "/register",
-    element: <div>yassssssssss!</div>,
+    element: <Register />,
   },
 ]);
 
