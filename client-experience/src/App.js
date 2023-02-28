@@ -14,7 +14,23 @@ import Home from './websitePages/home/Home';
 import Navbar from './componets /navbar/Navbar';
 import Footer from './componets /footer/Footer';
 
+const Container = styled.div`
+  display:flex;
+  flex-direction:column;
+`;
 
+const Header = styled.div`
+  color:#D7816A;
+  background-color:#FEFEF2;
+  display:flex;
+  flex-direction:row;
+  padding: 30px;
+  font-size:25px;
+  font-weight:bold;
+  box-shadow: 0 3px 6px 0 #FEFEF2;
+
+`
+  
 /*const Layout = () => {
   return(
     //Outlet is a function that is  used in parent route elements to render their child route elements
@@ -68,10 +84,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      
-    </div>
+    <Container>
+      <Header>IKnowYouHungry</Header>
+    </Container>
+   
   );
 }
 
