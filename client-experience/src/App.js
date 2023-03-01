@@ -24,12 +24,36 @@ const Header = styled.div`
   background-color:#FEFEF2;
   display:flex;
   flex-direction:row;
+  align-items: center;
+  justify-content: space-between;
   padding: 30px;
   font-size:25px;
   font-weight:bold;
   box-shadow: 0 3px 6px 0 #FEFEF2;
+`;
 
-`
+const AppNameComponent = styled.div`
+  display:flex;
+  align-content:center;
+`;
+
+const SearchComponent = styled.div`
+  display: flex;
+  flex-direction:row;
+  background-color:#FEFEF2;
+  padding:25px;
+  border-radius:6px;
+  width:50% auto;
+`; 
+
+const SearchInput = styled.input`
+    margin-left: 15px;
+    outline: thistle;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px
+`;
   
 /*const Layout = () => {
   return(
@@ -85,7 +109,13 @@ const router = createBrowserRouter([
 function App() {
   return (
     <Container>
-      <Header>IKnowYouHungry</Header>
+      <Header>
+        <AppNameComponent>IKnowYouHungry</AppNameComponent>
+        <SearchComponent>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <SearchInput placeholder='search recipe' />
+        </SearchComponent>
+      </Header>
     </Container>
    
   );
