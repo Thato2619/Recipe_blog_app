@@ -1,13 +1,39 @@
 
 import './App.css';
 import Login from './Pages/Login';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Register from './Pages/Register';
+import Home from './Pages/Home';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  //Register page
+  {
+    path: "/",
+    element: <div>WDFGHJK</div>,
+  },
+
+  //Login Page
+  {
+    path: "/register",
+    element: <Register />,
+  }, 
+
+  //Home Page
+  {
+    path: "/login",
+    element: <Login />,
+  },
+]);
+
+
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Route exact path="/login" component={Login} />
-      </BrowserRouter>
+    <Home />
+    <RouterProvider router={router} />
     </div>
   )
    
