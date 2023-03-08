@@ -1,9 +1,10 @@
 
 import './App.css';
-
+import Login
+ from './Pages/Login';
 function App() {
   return (
-    <h1>weather weather</h1>
+    <Login />
   )
    
 }
