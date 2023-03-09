@@ -2,7 +2,8 @@
 import './App.css';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-import Home from './Pages/Home';
+import Home from './Pages/Home.jsx';
+import Home from '../Pages/Home.js';
 import {useNavigate} from 'react-router-dom';
 
 
