@@ -1,10 +1,13 @@
 import React from 'react'
-
+import {useNavigate} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Register = () => {
 
-  
+  //add useNavigate function 
+  const navigate = useNavigate('');
+
+
   return (<section className="vh-100 bg-image" style={{backgroundImage: 'url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp")'}}>
   <div className="mask d-flex align-items-center h-100 gradient-custom-3">
     <div className="container h-100">
@@ -31,15 +34,11 @@ const Register = () => {
                   <label className="form-label" htmlFor="form3Example4cdg">Repeat your password</label>
                 </div>
                 <div className="form-check d-flex justify-content-center mb-5">
-                  <input className="form-check-input me-2" type="checkbox" defaultValue id="form2Example3cg" />
-                  <label className="form-check-label" htmlFor="form2Example3g">
-                    I agree all statements in <a href="#!" className="text-body"><u>Terms of service</u></a>
-                  </label>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <button type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  <button type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onClick={() => navigate('home')}>Register</button>
                 </div>
-                <p className="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" className="fw-bold text-body"><u>Login here</u></a></p>
+                <p className="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" className="fw-bold text-body" onClick={() => navigate('login')}><u>Login here</u></a></p>
               </form>
             </div>
           </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { emailValidator, passwordValidator } from '../components/regeValidation';
-import './login.css'
 import {useNavigate} from 'react-router-dom';
 const Login = () => {
 
@@ -30,11 +29,11 @@ const Login = () => {
       setErrorMessage('Successfully Validated')
 
       //set success message that enables existing users to login  (write all users)
-      if(input.email !== 'admin@a.com' || input.password !== 'aD!min123'); return setErrorMessage('Please enter valid email');
-      if (input.email !== 'colosseum@docs.gmail' || input.password!== 'Ch33sec@ke246'); return setErrorMessage('Please enter valid email');
-      if(input.email !== 'phutphut@gmail.com' || input.password!== 'mArr!ot789'); return setErrorMessage('Please enter valid email');
-      if (input.email !== 'test123@gmail.com' || input.password !== 'T#sray1233?'); return setErrorMessage('Please enter valid email');
-      if (input.email !== 'enca.net@gmail.com' || input.password !== 'w3Athaar$!'); return setErrorMessage('Please enter valid email');
+      if(input.email !== 'admin@a.com' || input.password !== 'aD!min123') return setErrorMessage('Please enter valid email');
+      if (input.email !== 'colosseum@docs.gmail' || input.password!== 'Ch33sec@ke246') return setErrorMessage('Please enter valid email');
+      if(input.email !== 'phutphut@gmail.com' || input.password!== 'mArr!ot789') return setErrorMessage('Please enter valid email');
+      if (input.email !== 'test123@gmail.com' || input.password !== 'T#sray1233?')  return setErrorMessage('Please enter valid email');
+      if (input.email !== 'enca.net@gmail.com' || input.password !== 'w3Athaar$!')  return setErrorMessage('Please enter valid email');
 
       navigate('/');
       localStorage.setItem('auth', true)
@@ -46,8 +45,25 @@ const Login = () => {
 
   //create form submitter that enables authentication and authorization instead allowiing default user
   const formSubmitter = e => {
-  
-   
+
+    e.preventDefault();
+    setSuccessMessage('')
+    if(!emailValidator(input.email)) return setErrorMessage('Please enter valid email');
+
+    if(!passwordValidator(input.password))
+      return setErrorMessage(
+        'Password should have minimum 8 characters with the combination of uppercase, lowercase, numbers and specialCharacters'
+      );
+      setErrorMessage('Successfully Validated')
+
+      //set success message that enables existing users to login  (write all users)
+      if(input.email !== 'admin@a.com' || input.password !== 'aD!min123')  return setErrorMessage('Please enter valid email');
+      if (input.email !== 'colosseum@docs.gmail' || input.password!== 'Ch33sec@ke246') return setErrorMessage('Please enter valid email');
+      if(input.email !== 'phutphut@gmail.com' || input.password!== 'mArr!ot789') return setErrorMessage('Please enter valid email');
+      if (input.email !== 'test123@gmail.com' || input.password !== 'T#sray1233?') return setErrorMessage('Please enter valid email');
+      if (input.email !== 'enca.net@gmail.com' || input.password !== 'w3Athaar$!') return setErrorMessage('Please enter valid email');
+
+
     
   }
   return (

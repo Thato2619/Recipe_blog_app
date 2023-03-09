@@ -11,8 +11,8 @@ import {
 const router = createBrowserRouter([
   //Register page
   {
-    path: "/",
-    element: <div>WDFGHJK</div>,
+    path: "/home",
+    element:<Home />,
   },
 
   //Login Page
@@ -33,6 +33,7 @@ function App() {
   return (
     <div>
     <Home />
+   
     <RouterProvider router={router} />
     </div>
   )
