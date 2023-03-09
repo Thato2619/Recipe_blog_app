@@ -3,11 +3,15 @@ import './App.css';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Home from './Pages/Home';
+import {useNavigate} from 'react-router-dom';
+
+
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
+const navigate = useNavigate();
 
 const router = createBrowserRouter([
   //Register page

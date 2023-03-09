@@ -1,7 +1,7 @@
-import React from "react";
 import sunnyDay from "./images/sunny-day.jpeg";
 import coldDay from "./images/cold-day.jpeg";
-import Description from "./components/description/Descriptions";
+import Descriptions from "./components/description/Descriptions";
+import { IoIosPartlySunny } from "react-icons/wi";
 import { useEffect, useState } from "react";
 import { getTheFormattedWeatherData } from "../weatherService";
 
@@ -67,14 +67,14 @@ function Home() {
               <div className="icon">
                 <h3>{`${weather.name}, ${weather.country}`}</h3>
                 <img src={weather.iconUrl} alt="weather icon"/>
-                <h3> {weather.Description} </h3>
+                <h3> {weather.Descriptions} </h3>
               </div>
               <div className="temperature">
                 <h1>{`${weather.temp.toFixed()} ${units === "metric" ? "C" : "F"}` }° </h1>
               </div>
             </div>
             {/*bottom description*/}
-            <Description weather={weather} units={units} />
+            <Descriptions weather={weather} units={units} />
           </div>
         )}
 
@@ -85,4 +85,5 @@ function Home() {
 }
 
 export default Home;
+
 

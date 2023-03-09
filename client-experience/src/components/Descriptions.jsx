@@ -1,5 +1,5 @@
 import React from 'react'
-import './descriptions.css';
+import './description.css';
 import { AiOutlineArrowDown }from 'react-icons/ai';
 
 import { faArrowUp, FaArrowDown, FaWind, FaArrowUp } from "react-icons/fa";
