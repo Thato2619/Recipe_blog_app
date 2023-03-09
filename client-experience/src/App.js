@@ -2,9 +2,8 @@
 import './App.css';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-import Home from './Pages/Home.jsx';
-import Home from '../Pages/Home.js';
-import {useNavigate} from 'react-router-dom';
+import Home from './Pages/Home';
+
 
 
 import {
@@ -12,25 +11,24 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-const navigate = useNavigate();
 
 const router = createBrowserRouter([
   //Register page
   {
-    path: "/home",
-    element:<Home />,
+    path: "/register",
+    element:<Register />,
   },
 
   //Login Page
   {
-    path: "/register",
-    element: <Register />,
+    path: "/login",
+    element: <Login />,
   }, 
 
   //Home Page
   {
-    path: "/login",
-    element: <Login />,
+    path: "/home",
+    element: <Home />,
   },
 ]);
 

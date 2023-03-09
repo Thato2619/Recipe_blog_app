@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { emailValidator, passwordValidator } from '../components/regeValidation';
+import { emailValidator, passwordValidator } from './components/regeValidation';
 import {useNavigate} from 'react-router-dom';
 const Login = () => {
 
