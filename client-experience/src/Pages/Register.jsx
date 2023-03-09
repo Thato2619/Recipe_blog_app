@@ -3,6 +3,8 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Register = () => {
+
+  
   return (<section className="vh-100 bg-image" style={{backgroundImage: 'url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp")'}}>
   <div className="mask d-flex align-items-center h-100 gradient-custom-3">
     <div className="container h-100">
