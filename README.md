@@ -1,4 +1,3 @@
-# Weather_app
 
 
 # Full Stack Weather App (in Node js and React)
